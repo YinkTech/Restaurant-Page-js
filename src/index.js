@@ -3,7 +3,8 @@ import { dishes } from './dishes.js';
 import { about } from './about.js';
 import './styles/style.scss';
 
-pageload();
+//pageload();
+dishes();
 
 let tabSwitchingModule = (function() {
 

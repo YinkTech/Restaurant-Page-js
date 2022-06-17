@@ -2,6 +2,7 @@
 
 $primary-color: rgb(237, 235, 237);
 $secondary-color: rgb(137, 83, 54);
+$heading-color: rgb(70, 42, 27);
 
 * {
     padding: 0px;
@@ -23,6 +24,13 @@ body {
 .logo-text {
     color: $secondary-color;
     padding: 5px;
+}
+
+.headdinf {
+    text-align: center;
+    color: $heading-color;
+    padding: 5px;
+
 }
 
 .header ul {
@@ -66,3 +74,63 @@ body {
     padding: 20px;
     text-align: center;
 }
+
+.first-dish-imag {
+    max-width: 500px;
+    max-height: 300px;
+    padding-bottom: 10px;
+}
+
+.footer {
+    padding: 10px;
+    color: $secondary-color;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+/* Create four equal columns that floats next to each other */
+.firstDish {
+    align-self: center;
+    margin: 10px;
+    float: left;
+    width: 30%;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 20px;
+    text-align: center;
+    color: $secondary-color;
+    background: #fff;
+    padding: 5px;
+    border: 2px solid green;
+  }
+  
+  /* Clear floats after the columns */
+
+  .dishescont:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .dishescont {
+    align-items: center;
+  }
+  
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+  @media screen and (max-width: 992px) {
+    .firstDish {
+      width: 50%;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .firstDish {
+      width: 90%;
+    }
+  }
