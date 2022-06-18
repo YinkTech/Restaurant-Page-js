@@ -4,7 +4,8 @@
   "description": "A javascpript webpack project",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -15,9 +16,10 @@
   "bugs": {
     "url": "https://github.com/YinkTech/Restaurant-Page-js/issues"
   },
-  "homepage": "https://github.com/YinkTech/Restaurant-Page-js#readme",
+  "homepage": "https://github.com/YinkTech/Restaurant-Page-js",
   "devDependencies": {
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "sass": "^1.52.3",
     "sass-loader": "^13.0.0",
     "style-loader": "^3.3.1",
