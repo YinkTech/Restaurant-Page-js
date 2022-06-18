@@ -5,8 +5,8 @@ $secondary-color: rgb(137, 83, 54);
 $heading-color: rgb(70, 42, 27);
 
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
   background-color: rgb(255, 255, 255);
   display: flex;
   padding: 5px;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .logo-text {
@@ -33,13 +33,12 @@ body {
   text-align: center;
   color: $heading-color;
   padding: 5px;
-
 }
 
 .header ul {
   align-self: center;
   display: flex;
-  margin: 0px;
+  margin: 0;
   list-style: none;
 }
 
@@ -88,7 +87,7 @@ body {
 }
 
 .firstDish {
-  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 #00000033;
   transition: 0.3s;
   border-radius: 5px;
   margin: 10px;
@@ -105,11 +104,11 @@ body {
 }
 
 .firstDish:hover {
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 #00000033;
   cursor: pointer;
 }
 
-.dishescont:after {
+.dishescont::after {
   content: "";
   display: table;
   clear: both;
@@ -143,13 +142,13 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-    .firstDish {
-      width: 50%;
+      .firstDish {
+          width: 50%;
+      }
     }
-}
 
 @media screen and (max-width: 600px) {
-    .firstDish {
-      width: 90%;
+      .firstDish {
+          width: 90%;
+      }
     }
-}
