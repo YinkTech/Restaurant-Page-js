@@ -8,12 +8,17 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].js',
+        assetModuleFilename: '[name][ext]',
     },
     module: {
         rules: [
             {
-                test: /\.scss$/,
+                test: /\.scss$/i,
                 use: ['style-loader', 'css-loader', 'sass-loader'],
+            },
+            {
+              test: /\.(png|svg|jpg|jpeg|gif)$/i,
+              type: 'asset/resource',
             },
         ],
     },
