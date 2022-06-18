@@ -1,3 +1,8 @@
+import leadImage from './assets/pexels-cassiano-psomas-1045199.jpg';
+import firstImage from './assets/pexels-dhyamis-kleber-3584317.jpg';
+import fifthImage from './assets/pexels-tookapic-7782.jpg';
+import thirdImage from './assets/pexels-chevanon-photography-312418.jpg';
+
 export function pageload() {
     const contentDiv = document.querySelector('#content');
 
@@ -7,7 +12,7 @@ export function pageload() {
     leadCont.classList.add("lead-container")
     const leadImg = document.createElement("img");
     leadImg.classList.add("lead-img");
-    leadImg.src = '../src/assets/pexels-cassiano-psomas-1045199.jpg';
+    leadImg.src = leadImage;
     leadImg.alt = 'Lead Img';
     leadCont.append(leadImg);
     contentDiv.appendChild(leadCont);
@@ -29,7 +34,7 @@ export function pageload() {
     firstDish.classList.add("firstDish");
     const firstImg = document.createElement("img");
     firstImg.classList.add("first-dish-imag");
-    firstImg.src = "../src/assets/pexels-dhyamis-kleber-3584317.jpg";
+    firstImg.src = firstImage;
     firstDish.textContent = "Black Tea as low as \n $2";
     firstImg.alt = "first dish Image";
     
@@ -40,7 +45,7 @@ export function pageload() {
     fifthDish.classList.add("firstDish");
     const fifthImg = document.createElement("img");
     fifthImg.classList.add("first-dish-imag");
-    fifthImg.src = "../src/assets/pexels-tookapic-7782.jpg";
+    fifthImg.src = fifthImage;
     fifthDish.textContent = "Stake with Chips as low as \n $7";
     fifthImg.alt = "fifth dish Image";
     
@@ -51,7 +56,7 @@ export function pageload() {
     thirdDish.classList.add("firstDish");
     const thirdImg = document.createElement("img");
     thirdImg.classList.add("first-dish-imag");
-    thirdImg.src = "../src/assets/pexels-chevanon-photography-312418.jpg";
+    thirdImg.src = thirdImage;
     thirdDish.textContent = "Sun creamed Tea as low as \n $3";
     thirdImg.alt = "third dish Image";
     
