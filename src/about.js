@@ -1,3 +1,5 @@
+import aboutImage from './assets/pexels-oleksandr-pidvalnyi-332090.jpg';
+
 export function about() {
     const contentDiv = document.querySelector('#content');
 
@@ -7,7 +9,7 @@ export function about() {
     leadCont.classList.add("lead-container")
     const leadImg = document.createElement("img");
     leadImg.classList.add("about-img");
-    leadImg.src = '../src/assets/pexels-oleksandr-pidvalnyi-332090.jpg';
+    leadImg.src = aboutImage;
     leadImg.alt = 'about Lead Img';
     leadCont.append(leadImg);
     contentDiv.appendChild(leadCont);
