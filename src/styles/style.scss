@@ -5,132 +5,151 @@ $secondary-color: rgb(137, 83, 54);
 $heading-color: rgb(70, 42, 27);
 
 * {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
-    box-sizing: border-box;
-    background: $primary-color;
+  box-sizing: border-box;
+  background: $primary-color;
 }
 
 .header {
-    height: 50px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content:space-between;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  padding: 5px;
+  justify-content:space-between;
 }
 
 .logo-text {
-    color: $secondary-color;
-    padding: 5px;
+  color: $secondary-color;
+  padding: 5px;
+  font-size: 20px;
+  align-self: center;
 }
 
 .headdinf {
-    text-align: center;
-    color: $heading-color;
-    padding: 5px;
+  text-align: center;
+  color: $heading-color;
+  padding: 5px;
 
 }
 
 .header ul {
-    display: flex;
-    margin: 0px;
-    list-style: none;
+  align-self: center;
+  display: flex;
+  margin: 0px;
+  list-style: none;
 }
 
 .header ul li {
-    padding: 10px;
-    color: $secondary-color;
-    cursor: pointer;
+  padding: 10px;
+  color: $secondary-color;
+  cursor: pointer;
 }
 
 .header ul li:hover {
-    background: rgb(170, 107, 107);
-    color: #fff;
-    transition: ease-in-out 0.5s;
+  background: rgb(170, 107, 107);
+  color: #fff;
+  transition: ease-in-out 0.5s;
 }
 
 .header ul li:active {
-    color: #000;
+  color: #000;
 }
 
 .lead-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .lead-img {
-    background: #000;
-    max-height: 600px;
+  max-height: 650px;
+}
+
+.about-img {
+  max-height: 400px;
 }
 
 .first-section-paragraph {
-    margin-top: 20px;
-    color: $secondary-color;
-    font-size: 30px;
-    padding: 20px;
-    text-align: center;
+  margin-top: 20px;
+  color: $secondary-color;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
 }
 
 .first-dish-imag {
-    max-width: 500px;
-    max-height: 300px;
-    padding-bottom: 10px;
+  max-width: 500px;
+  max-height: 300px;
+  padding-bottom: 10px;
+}
+
+.firstDish {
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 10px;
+  float: left;
+  width: 30%;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 20px;
+  text-align: center;
+  color: $secondary-color;
+  background: #fff;
+  padding: 5px;
+  border: 2px solid green;
+}
+
+.firstDish:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.dishescont:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dishescont {
+  align-items: center;
+}
+
+.about-sec-paragraph {
+  margin-top: 20px;
+  color: $secondary-color;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-paragraph {
+  color: $secondary-color;
+  font-size: 20px;
+  padding-bottom: 5px;
+  text-align: center;
 }
 
 .footer {
-    padding: 10px;
-    color: $secondary-color;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
+  padding: 10px;
+  color: $secondary-color;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  margin-top: 50px;
 }
 
-
-
-
-
-
-/* Create four equal columns that floats next to each other */
-.firstDish {
-    align-self: center;
-    margin: 10px;
-    float: left;
-    width: 30%;
-    display: flex;
-    flex-direction: column-reverse;
-    font-size: 20px;
-    text-align: center;
-    color: $secondary-color;
-    background: #fff;
-    padding: 5px;
-    border: 2px solid green;
-  }
-  
-  /* Clear floats after the columns */
-
-  .dishescont:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .dishescont {
-    align-items: center;
-  }
-  
-  /* On screens that are 992px wide or less, go from four columns to two columns */
-  @media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .firstDish {
       width: 50%;
     }
-  }
-  
-  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 600px) {
     .firstDish {
       width: 90%;
     }
-  }
+}

@@ -4,7 +4,7 @@ import { about } from './about.js';
 import './styles/style.scss';
 
 //pageload();
-dishes();
+pageload();
 
 let tabSwitchingModule = (function() {
 
