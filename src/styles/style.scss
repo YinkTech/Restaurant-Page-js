@@ -87,7 +87,7 @@ body {
 }
 
 .firstDish {
-  box-shadow: 0 4px 8px 0 #00000033;
+  box-shadow: 0 4px 8px 0 #0003;
   transition: 0.3s;
   border-radius: 5px;
   margin: 10px;
@@ -104,7 +104,7 @@ body {
 }
 
 .firstDish:hover {
-  box-shadow: 0 8px 16px 0 #00000033;
+  box-shadow: 0 8px 16px 0 #0003;
   cursor: pointer;
 }
 
@@ -142,13 +142,13 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-      .firstDish {
-          width: 50%;
-      }
+    .firstDish {
+        width: 50%;
     }
+}
 
 @media screen and (max-width: 600px) {
-      .firstDish {
-          width: 90%;
-      }
+    .firstDish {
+        width: 90%;
     }
+}
