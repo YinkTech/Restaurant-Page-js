@@ -9,7 +9,7 @@ HTML <br> CSS <br> JavaScript
 
 ## Live Demo
 
-[Live Demo link](https://github.com/YinkTech/Restaurant-Page-js/)
+[Live Demo link](https://yinktech.github.io/Restaurant-Page-js/)
 
 ## Authors
 
