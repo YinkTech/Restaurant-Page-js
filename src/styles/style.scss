@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
+
+$primary-color: rgb(237, 235, 237);
+$secondary-color: rgb(137, 83, 54);
+$heading-color: rgb(70, 42, 27);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background: $primary-color;
+}
+
+.header {
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+}
+
+.logo-text {
+  color: $secondary-color;
+  padding: 5px;
+  font-size: 20px;
+  align-self: center;
+}
+
+.headdinf {
+  text-align: center;
+  color: $heading-color;
+  padding: 5px;
+}
+
+.header ul {
+  align-self: center;
+  display: flex;
+  margin: 0;
+  list-style: none;
+}
+
+.header ul li {
+  padding: 10px;
+  color: $secondary-color;
+  cursor: pointer;
+}
+
+.header ul li:hover {
+  background: rgb(170, 107, 107);
+  color: #fff;
+  transition: ease-in-out 0.5s;
+}
+
+.header ul li:active {
+  color: #000;
+}
+
+.lead-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lead-img {
+  max-height: 650px;
+}
+
+.about-img {
+  max-height: 400px;
+}
+
+.first-section-paragraph {
+  margin-top: 20px;
+  color: $secondary-color;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+.first-dish-imag {
+  max-width: 500px;
+  max-height: 300px;
+  padding-bottom: 10px;
+}
+
+.firstDish {
+  box-shadow: 0 4px 8px 0 #0003;
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 10px;
+  float: left;
+  width: 30%;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 20px;
+  text-align: center;
+  color: $secondary-color;
+  background: #fff;
+  padding: 5px;
+  border: 2px solid green;
+}
+
+.firstDish:hover {
+  box-shadow: 0 8px 16px 0 #0003;
+  cursor: pointer;
+}
+
+.dishescont::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dishescont {
+  align-items: center;
+}
+
+.about-sec-paragraph {
+  margin-top: 20px;
+  color: $secondary-color;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-paragraph {
+  color: $secondary-color;
+  font-size: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.footer {
+  padding: 10px;
+  color: $secondary-color;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .firstDish {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .firstDish {
+    width: 90%;
+  }
+
+  .logo-text {
+    font-size: 15px;
+  }
+}
