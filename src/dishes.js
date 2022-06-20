@@ -6,7 +6,7 @@ import fifthImage from './assets/pexels-tookapic-7782.jpg';
 import sixImage from './assets/pexels-tookapic-9708.jpg';
 
 
-export function dishes() {
+export let dishes = () => {
     const contentDiv = document.querySelector('#content');
 
     contentDiv.replaceChildren();
@@ -82,5 +82,4 @@ export function dishes() {
 
     contentDiv.appendChild(dishesContainer);
 
-    
 }

@@ -3,7 +3,7 @@ import firstImage from './assets/pexels-dhyamis-kleber-3584317.jpg';
 import fifthImage from './assets/pexels-tookapic-7782.jpg';
 import thirdImage from './assets/pexels-chevanon-photography-312418.jpg';
 
-export function pageload() {
+export let pageload =  () => {
     const contentDiv = document.querySelector('#content');
 
     contentDiv.replaceChildren();
