@@ -1,6 +1,6 @@
 import aboutImage from './assets/pexels-oleksandr-pidvalnyi-332090.jpg';
 
-export let about = () => {
+export const about = () => {
     const contentDiv = document.querySelector('#content');
 
     contentDiv.replaceChildren();

@@ -6,7 +6,7 @@ import fifthImage from './assets/pexels-tookapic-7782.jpg';
 import sixImage from './assets/pexels-tookapic-9708.jpg';
 
 
-export let dishes = () => {
+export const dishes = () => {
     const contentDiv = document.querySelector('#content');
 
     contentDiv.replaceChildren();
